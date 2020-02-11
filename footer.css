@@ -1,0 +1,113 @@
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #11122b;
+    color: #cbcbcb;
+    bottom: 0;
+    /*position: absolute;*/
+    width: 100%;
+}
+
+/* here begins .left-section */
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.left-section p:hover {
+    color: #cea135;
+}
+
+#logo-footer {
+    margin-top: 20px;
+}
+
+#logo-footer img {
+    height: 100px;
+    width: 100px;
+}
+
+/* here begins center-section */
+.center-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#phone-picture i {
+    font-size: 20px;
+}
+
+#phone-picture i:hover {
+    color: #cea135;
+}
+
+#phone {
+    margin-left: 10px;
+    margin-right: 10px;
+    letter-spacing: 2px;
+}
+
+.center-section > .social-media-icons-wrapper {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#icons a {
+    color: #cbcbcb;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+#icons a:hover {
+    color: #cea135;
+}
+
+.center-section > .copyright-wrapper {
+    margin-bottom: 20px;
+    font-size: 10px;
+    color: #858585;
+}
+
+/* here begins right-section */
+.footer > .right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#address-wrapper {
+    color: white;
+    text-align: right;
+}
+
+#address-wrapper a {
+    color: #858585;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: 0.5s;
+}
+
+#address-wrapper a:hover {
+    color: gold;
+
+}
+
+#contact-icon {
+    margin-left: 15px;
+    font-size: 2em;
+}
+
+
