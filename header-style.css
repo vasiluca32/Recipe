@@ -13,9 +13,17 @@ header{
     margin-top: 5px;
     cursor: pointer;
     border-radius: 100%;
+    float: left;
     
 }
 
 #home-button:hover{
    opacity: 50%;
 }
+#search {
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
