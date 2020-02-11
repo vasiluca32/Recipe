@@ -11,7 +11,6 @@ function clearMealContainer() {
     mealsContainer.innerHTML = "Loading";
 }
 
-
 function hitServer(url) {
     fetch(url)
 
@@ -63,7 +62,7 @@ document.getElementsByClassName("interactions")[0].appendChild(parentDiv);
 document.getElementById("parentDiv").addEventListener("click", getLeter);
 
 function getLeter(event) {
-    if (event.target != event.currentTarget) {
+    if (event.target !== event.currentTarget) {
         console.log(event.target.id);
         const urlLeter = `https://www.themealdb.com/api/json/v1/1/search.php?f=${event.target.id}`;
         hitServer(urlLeter);

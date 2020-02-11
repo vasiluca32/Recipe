@@ -1,0 +1,21 @@
+header{
+    border-bottom: 1px solid lightgray;
+    height: 70px;
+    width:100%;
+    top: 0;
+}
+
+
+#home-button{
+    height: 60px;
+    width:60px;
+    margin-left: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 100%;
+    
+}
+
+#home-button:hover{
+   opacity: 50%;
+}

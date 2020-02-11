@@ -2,12 +2,20 @@
 <head>
     <title>make-it-simple</title>
     <link href="./style.css" rel="stylesheet" type="text/css"/>
+    <link href="./header-style.css" rel="stylesheet" type="text/css"/>
+    <link href="./content.css" rel="stylesheet" type="text/css"/>
+    <link href="./footer.css" rel="stylesheet" type="text/css"/>
     <script src="https://kit.fontawesome.com/5c0ea470d5.js"></script>
 </head>
 <body>
-<div class="interactions"></div>
-<div id="meals-container"></div>
-<div class="footer">
+<header class="header" role="banner">
+    <img id="home-button" src="pictures/logo2_svg.png">
+</header>
+<div class="content">
+    <div class="interactions"></div>
+    <div id="meals-container"></div>
+</div>
+<footer class="footer">
     <div class="left-section">
         <p>About</p>
         <p>Recepies</p>
@@ -50,20 +58,18 @@
     </div>
     <div class="right-section">
         <div id="address-wrapper">
-            <a href="contact.html">
+            <a href="./contact.html">
                 123 Any Street<br>
                 Scottsdale, AZ, 85251
             </a>
         </div>
 
         <div id="contact-icon">
-            <!-- <a href="contact.html"> -->
             <i class="fas fa-map-marker-alt"></i>
-            </a>
         </div>
-
     </div>
-</div>
+</footer>
 </body>
+<script src="./script.js"></script>
 <script src="./search.js"></script>
 </html>
