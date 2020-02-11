@@ -68,4 +68,14 @@ function getLeter(event) {
         hitServer(urlLeter);
     }
 }
+document.getElementById("search").addEventListener("keydown", function(event) {
+    
 
+    if (event.key === "Enter") {
+      
+      const searchValue = event.target.value;
+      
+      const searchUrl = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchValue}`;
+      hitServer(searchUrl);
+    }
+  });
