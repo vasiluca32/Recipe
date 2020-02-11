@@ -5,8 +5,8 @@ footer {
     background-color: #11122b;
     color: #cbcbcb;
     bottom: 0;
-    /*position: absolute;*/
     width: 100%;
+    flex-shrink: 0;
 }
 
 /* here begins .left-section */
