@@ -79,3 +79,11 @@ document.getElementById("search").addEventListener("keydown", function(event) {
       hitServer(searchUrl);
     }
   });
+
+  document.getElementById("meatDiv").addEventListener("click", catchImages());
+
+  catchImages(){
+      const searchUrl = `https://www.themealdb.com/api/json/v1/1/${searchValue}.php`;
+      hitServer(searchUrl);
+}
+  
