@@ -1,4 +1,5 @@
 const mealsContainer = document.getElementById("meals-container");
+
 const input = document.getElementById("meal-name");
 
 function generateRateUrl(inputValue) {
@@ -26,20 +27,27 @@ function hitServer(url) {
 
 
 function renderMeals(meals) {
-
     mealsContainer.innerHTML = "";
     for (const meal of meals) {
-        console.log(meal);
         const mealContainer = document.createElement("div");
+        mealContainer.id = "mealContainer";
         mealContainer.style.marginBottom = "20px";
 
-        const mealTitle = document.createElement("h3");
-        mealTitle.innerText = meal.strMeal;
-        mealContainer.appendChild(mealTitle);
+        const mealName = document.createElement("h2");
+        mealName.id = "mealName";
+        mealName.innerText = meal.strMeal;
+        mealContainer.appendChild(mealName);
 
-        const mealContent = document.createElement("p");
-        mealContent.innerText = meal.strInstructions;
-        mealContainer.appendChild(mealContent);
+        const mealImg = document.createElement("img");
+        mealImg.id = "mealImg";
+        mealImg.setAttribute("src", meal.strMealThumb);
+        mealImg.classList.add("meal-img");
+        mealContainer.appendChild(mealImg);
+
+        const mealDesc = document.createElement("p");
+        mealDesc.id = "mealDesc";
+        mealDesc.innerText = meal.strInstructions;
+        mealContainer.appendChild(mealDesc);
 
         mealsContainer.appendChild(mealContainer);
     }
@@ -79,3 +87,5 @@ document.getElementById("search").addEventListener("keydown", function(event) {
       hitServer(searchUrl);
     }
   });
+
+  
