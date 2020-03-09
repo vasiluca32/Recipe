@@ -10,7 +10,7 @@ footer {
 }
 
 /* here begins .left-section */
-.left-section {
+ .left-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,10 +28,10 @@ footer {
 #logo-footer img {
     height: 100px;
     width: 100px;
-}
+} 
 
 /* here begins center-section */
-.center-section {
+ .center-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,10 +78,10 @@ footer {
     margin-bottom: 20px;
     font-size: 10px;
     color: #858585;
-}
+} 
 
 /* here begins right-section */
-.footer > .right-section {
+ .footer > .right-section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,9 +105,7 @@ footer {
 
 }
 
-#contact-icon {
-    margin-left: 15px;
+#contact-icon { 
+     margin-left: 15px;
     font-size: 2em;
 }
-
-

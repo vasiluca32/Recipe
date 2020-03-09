@@ -1,4 +1,4 @@
-header{
+/* header{
     border-bottom: 1px solid lightgray;
     height: 70px;
     width:100%;
@@ -6,7 +6,7 @@ header{
 }
 
 
-#home-button{
+ #home-button {
     height: 60px;
     width:60px;
     margin-left: 5px;
@@ -17,13 +17,22 @@ header{
     
 }
 
+
 #home-button:hover{
    opacity: 50%;
+/* } */
+.navbar-brand img
+{
+   height: 60px;
+   width:60px;
+   cursor: pointer;
 }
 #search {
     border-radius: 5px;
     padding: 5px;
     margin-top: 20px;
     margin-left: 10px;
-}
+    height: 30px;
+} 
+ 
 

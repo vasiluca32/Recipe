@@ -9,25 +9,13 @@ function generateRateUrl(inputValue) {
 }
 
 function clearMealContainer() {
-    mealsContainer.innerHTML = "Loading";
-}
-
-function hitServer(url) {
-    fetch(url)
-
-        .then(function (response) {
-            return response.json();
-        })
-
-        .then(function (json) {
-
-            renderMeals(json.meals);
-        });
-}
-
-
-function renderMeals(meals) {
     mealsContainer.innerHTML = "";
+}
+
+function renderMeals(meals, clean = true) {
+    if (clean) {
+        mealsContainer.innerHTML = "";
+    }
     for (const meal of meals) {
         const mealContainer = document.createElement("div");
         mealContainer.id = "mealContainer";
@@ -59,33 +47,40 @@ parentDiv.id = "parentDiv";
 
 for (let i = 65; i < 91; i++) {
     let c = String.fromCharCode(i);
-    const leter = document.createElement("div");
-    leter.innerText = c;
-    leter.id = c;
-    leter.style.padding = "3px";
-    parentDiv.appendChild(leter);
+    const letter = document.createElement("div");
+    letter.innerText = c;
+    letter.id = c;
+    letter.style.padding = "3px";
+    parentDiv.appendChild(letter);
 }
 document.getElementsByClassName("interactions")[0].appendChild(parentDiv);
 
-document.getElementById("parentDiv").addEventListener("click", getLeter);
+document.getElementById("parentDiv").addEventListener("click", getLetter);
 
-function getLeter(event) {
+function getLetter(event) {
     if (event.target !== event.currentTarget) {
         console.log(event.target.id);
-        const urlLeter = `https://www.themealdb.com/api/json/v1/1/search.php?f=${event.target.id}`;
-        hitServer(urlLeter);
+        const urlLetter = `https://www.themealdb.com/api/json/v1/1/search.php?f=${event.target.id}`;
+        hitSServer(urlLetter);
     }
 }
-document.getElementById("search").addEventListener("keydown", function(event) {
-    
+document.getElementById("btn").addEventListener("click", function () {
 
-    if (event.key === "Enter") {
-      
-      const searchValue = event.target.value;
-      
-      const searchUrl = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchValue}`;
-      hitServer(searchUrl);
-    }
-  });
+    const searchValue = document.getElementById("input").value;
 
-  
+    const searchUrl = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchValue}`;
+    hitSServer(searchUrl);
+
+});
+
+function hitSServer(url) {
+    fetch(url)
+
+        .then(function (response) {
+            return response.json();
+        })
+
+        .then(function (json) {
+            renderMeals(json.meals);
+        });
+}

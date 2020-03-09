@@ -1,0 +1,42 @@
+/* .carousel {
+    margin: 1.5rem;
+  } */
+  /* .carousel-inner {
+    margin:0 30px;
+  }
+.carousel-control-prev {
+    margin-left: -100px;
+  }
+  
+  .carousel-control-next {
+    margin-right: -100px;
+  }
+.carousel-item img{
+  align-items: center;
+} */
+
+/* The heart of the matter */
+.flags-container > .row {
+  /* display: flex; */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y:hidden;
+}
+.flags-container > .row::-webkit-scrollbar {
+  display: none;
+}
+/* .flags-container > .row > .col-3 { */
+  /* flex: 0 0 auto; */
+/* } */
+/* Decorations */
+/* .col-xs-4 { color: #fff; font-size: 48px; padding-bottom: 20px; padding-top: 18px; } */
+/* .col-xs-4:nth-child(3n+1) { background: #c69; } */
+/* .col-xs-4:nth-child(3n+2) { background: #9c6; } */
+/* .col-xs-4:nth-child(3n+3) { background: #69c; } */
+
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+.zoom:hover {
+  transform: scale(1.5);
+}

@@ -1,8 +1,8 @@
 .content {
     flex: 1 0 auto;
-}
+} 
 
-#meals-container {
+ #meals-container {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
