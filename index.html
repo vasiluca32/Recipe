@@ -1,98 +1,127 @@
 <html>
+
 <head>
-    <title>make-it-simple</title>
-    <link href="./style.css" rel="stylesheet" type="text/css"/>
-    <link href="./header-style.css" rel="stylesheet" type="text/css"/>
-    <link href="./content.css" rel="stylesheet" type="text/css"/>
-    <link href="./footer.css" rel="stylesheet" type="text/css"/>
-    <script src="https://kit.fontawesome.com/5c0ea470d5.js"></script>
+  <title>make-it-simple</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <link href="css/header-style.css" rel="stylesheet" type="text/css"/>
+  <link href="css/content.css" rel="stylesheet" type="text/css"/>
+  <link href="css/footer.css" rel="stylesheet" type="text/css"/>
+  <link href="css/carousel.css" rel="stylesheet" type="text/css"/>
+  <script src="https://kit.fontawesome.com/5c0ea470d5.js"></script>
 </head>
-<body>
-<header class="header" role="banner">
-    <img id="home-button" src="pictures/logo2_svg.png">
-    <input id="search" placeholder="search" />
+
+<body class="container-fluid p-0">
+<header class="navbar" role="banner">
+  <a class="navbar-brand">
+    <img id="home-button" src="pictures/logo2_svg.png" onclick="location.href='index.html'">
+  </a>
+  <form class="form-inline my-2 my-lg-0">
+    <input id="input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button id="btn" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+  </form>
 </header>
 
-<div class="content">
-    <div class="interactions"></div>
-    <div id="meals-container"></div>
-    <div class="categories">
-        <section id="meat">
-            <div id="meatDiv"></div>
-        </section>
-        <section id="seafood">
-            <div id="seafoodDiv"></div>
-        </section>
-        <section id="vegetarian">
-            <div id="vegetarianDiv"></div>
-        </section><section id="vegan">
-            <div id="veganDiv"></div>
-        </section>
-        <section id="soup">
-            <div id="soupDiv"></div>
-        </section>
-        <section id="salad">
-            <div id="saladDiv"></div>
-        </section><section id="pasta">
-            <div id="pastaDiv"></div>
-        </section>
-    </div>
+<div id="flags" class="container-fluid scrollable-container">
+  <div class="row text-center p-3">
+  </div>
 </div>
+<div id="letters" class="container-fluid scrollable-container">
+  <div class="row d-flex justify-content-center"></div>
+</div>
+
+<!-- abc list -->
+<div class="content">
+  <div id="meals-container"></div>
+  <div class="categories">
+    <section id="meat">
+      <div id="meatDiv"></div>
+    </section>
+    <section id="seafood">
+      <div id="seafoodDiv"></div>
+    </section>
+    <section id="vegetarian">
+      <div id="vegetarianDiv"></div>
+    </section>
+    <section id="vegan">
+      <div id="veganDiv"></div>
+    </section>
+    <section id="soup">
+      <div id="soupDiv"></div>
+    </section>
+    <section id="salad">
+      <div id="saladDiv"></div>
+    </section>
+    <section id="pasta">
+      <div id="pastaDiv"></div>
+    </section>
+  </div>
+</div>
+
 <footer class="footer">
-    <div class="left-section">
-        <p>About</p>
-        <p>Recepies</p>
-        <p>Contact Us</p>
-
+  <div class="left-section">
+    <p>About</p>
+    <p>Recepies</p>
+    <p>Contact Us</p>
+  </div>
+  <div class="center-section">
+    <div id="logo-footer">
+      <img src="pictures/logo2_svg.png">
     </div>
-    <div class="center-section">
-        <div id="logo-footer">
-            <img src="pictures/logo2_svg.png">
-        </div>
-        <div class="footer-phone">
-                     <span id="phone-picture">
-                        <i class="fas fa-phone-volume"></i>
-                    </span>
-            <span id="phone">
-                        555 555 5555
-                    </span>
-        </div>
-
-        <div class="social-media-icons-wrapper">
-            <div id="text">Follow us :</div>
-            <div id="icons">
-                <a href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fab fa-twitter"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="copyright-wrapper">
-            &copy; 2020 SCIT &#124; All rights reserved
-        </div>
+    <div class="footer-phone">
+                <span id="phone-picture">
+                    <i class="fas fa-phone-volume"></i>
+                </span>
+      <span id="phone">
+                    555 555 5555
+                </span>
     </div>
-    <div class="right-section">
-        <div id="address-wrapper">
-            <a href="./contact.html">
-                123 Any Street<br>
-                Scottsdale, AZ, 85251
-            </a>
-        </div>
-
-        <div id="contact-icon">
-            <i class="fas fa-map-marker-alt"></i>
-        </div>
+    <div class="social-media-icons-wrapper">
+      <div id="text">Follow us :</div>
+      <div id="icons">
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
     </div>
+    <div class="copyright-wrapper">
+      &copy; 2020 SCIT &#124; All rights reserved
+    </div>
+  </div>
+  <div class="right-section">
+    <div id="address-wrapper">
+      <a href="./contact.html">
+        123 Any Street<br>
+        Scottsdale, AZ, 85251
+      </a>
+    </div>
+    <div id="contact-icon">
+      <i class="fas fa-map-marker-alt"></i>
+    </div>
+  </div>
 </footer>
-</body>
-<script src="./script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<script src="./app.js"></script>
+<script src="./api.js"></script>
 <script src="./search.js"></script>
+<script src="./carousel.js"></script>
+
+</body>
 </html>
