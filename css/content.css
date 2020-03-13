@@ -23,3 +23,9 @@ p {
     height: 50%;
     background-color: blueviolet;
 }
+.text-left{
+    padding: 5px;
+}
+.card{
+    padding: 16px;
+}
