@@ -3,159 +3,152 @@
 <head>
   <title>make-it-simple</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="css/style.css" rel="stylesheet" type="text/css"/>
-  <link href="css/header-style.css" rel="stylesheet" type="text/css"/>
-  <link href="css/content.css" rel="stylesheet" type="text/css"/>
-  <link href="css/footer.css" rel="stylesheet" type="text/css"/>
-  <link href="css/carousel.css" rel="stylesheet" type="text/css"/>
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/header-style.css" rel="stylesheet" type="text/css" />
+  <link href="css/content.css" rel="stylesheet" type="text/css" />
+  <link href="css/footer.css" rel="stylesheet" type="text/css" />
+  <link href="css/carousel.css" rel="stylesheet" type="text/css" />
   <script src="https://kit.fontawesome.com/5c0ea470d5.js"></script>
 </head>
 
 <body class="container-fluid p-0">
-<header class="navbar" role="banner">
-  <a class="navbar-brand">
-    <img id="home-button" src="pictures/logo2_svg.png" onclick="location.href='index.html'">
-  </a>
-  <form class="form-inline my-2 my-lg-0">
-    <input id="input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button id="btn" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
-  </form>
-</header>
+  <header class="navbar" role="banner">
+    <a class="navbar-brand">
+      <img id="home-button" src="pictures/logo2_svg.png" onclick="location.href='index.html'">
+    </a>
+    <form class="form-inline my-2 my-lg-0">
+      <input id="input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button id="btn" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+    </form>
+  </header>
 
-<div id="flags" class="container-fluid scrollable-container">
-  <div class="row text-center p-3"></div>
-</div>
-
-<div id="letters" class="container-fluid scrollable-container">
-  <div class="row d-flex text-center justify-content-center"></div>
-</div>
-
-<div class="container-fluid scrollable-container" id="categories">
-  <div class="row d-flex text-center justify-content-center p-5">
-    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
-      <img alt="Meat"
-           class="img-fluid d-block mx-auto rounded-circle"
-           src="https://www.themealdb.com/images/media/meals/xb97a81583266727.jpg">
-      <p>Meat</p>
-    </div>
-    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
-      <img alt="Vegetarian"
-           class="img-fluid d-block mx-auto rounded-circle rounded-circle"
-           src="https://www.themealdb.com/images/media/meals/vptwyt1511450962.jpg">
-      <p>Vegetarian</p>
-    </div>
-    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
-      <img alt="Vegan"
-           class="img-fluid d-block mx-auto rounded-circle rounded-circle"
-           src="https://www.themealdb.com/images/media/meals/rvxxuy1468312893.jpg">
-      <p>Vegan</p>
-    </div>
-    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
-      <img alt="Salad"
-           class="img-fluid d-block mx-auto rounded-circle rounded-circle"
-           src="https://www.themealdb.com/images/media/meals/urtwux1486983078.jpg">
-      <p>Salad</p>
-    </div>
-    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
-      <img alt="Soups"
-           class="img-fluid d-block mx-auto rounded-circle rounded-circle"
-           src="https://www.themealdb.com/images/media/meals/1529446137.jpg">
-      <p>Soups</p>
-    </div>
-    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
-      <img alt="Pasta"
-           class="img-fluid d-block mx-auto rounded-circle rounded-circle"
-           src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg">
-      <p>Pasta</p>
-    </div>
-    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
-      <img alt="Desert"
-           class="img-fluid d-block mx-auto rounded-circle rounded-circle"
-           src="https://www.themealdb.com/images/media/meals/qpqtuu1511386216.jpg">
-      <p>Desert</p>
-    </div>
-    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
-      <img alt="Breakfast"
-           class="img-fluid d-block mx-auto rounded-circle rounded-circle"
-           src="https://www.themealdb.com/images/media/meals/g373701551450225.jpg">
-      <p>Breakfast</p>
-    </div>
+  <div id="flags" class="container-fluid scrollable-container">
+    <div class="row text-center p-3"></div>
   </div>
-</div>
 
-<!-- Categories -->
-<!-- <div>
-    <h3 class="text-left"> Browse by category </h3>
-</div> -->
-<div class="content">
-  <div id="meals-container"></div>
-</div>
-
-
-<footer class="footer">
-  <div class="left-section">
-    <p>About</p>
-    <p>Recepies</p>
-    <p>Contact Us</p>
+  <div id="letters" class="container-fluid scrollable-container">
+    <div class="row d-flex text-center justify-content-center"></div>
   </div>
-  <div class="center-section">
-    <div id="logo-footer">
-      <img src="pictures/logo2_svg.png">
-    </div>
-    <div class="footer-phone">
-                <span id="phone-picture">
-                    <i class="fas fa-phone-volume"></i>
-                </span>
-      <span id="phone">
-                    555 555 5555
-                </span>
-    </div>
-    <div class="social-media-icons-wrapper">
-      <div id="text">Follow us :</div>
-      <div id="icons">
-        <a href="#">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-facebook-f"></i>
-        </a>
+
+  <div class="container-fluid scrollable-container" id="categories">
+    <div class="row d-flex text-center justify-content-center p-5">
+      <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+        <img id="meat" alt="Meat" class="img-fluid d-block mx-auto rounded-circle"
+          src="https://www.themealdb.com/images/media/meals/xb97a81583266727.jpg">
+        <p>Meat</p>
+      </div>
+      <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+        <img id="vegetarian" alt="Vegetarian" class="img-fluid d-block mx-auto rounded-circle rounded-circle"
+          src="https://www.themealdb.com/images/media/meals/vptwyt1511450962.jpg">
+        <p>Vegetarian</p>
+      </div>
+      <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+        <img id="vegan" alt="Vegan" class="img-fluid d-block mx-auto rounded-circle rounded-circle"
+          src="https://www.themealdb.com/images/media/meals/rvxxuy1468312893.jpg">
+        <p>Vegan</p>
+      </div>
+      <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+        <img id="salad" alt="Salad" class="img-fluid d-block mx-auto rounded-circle rounded-circle"
+          src="https://www.themealdb.com/images/media/meals/urtwux1486983078.jpg">
+        <p>Salad</p>
+      </div>
+      <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+        <img id="soups" alt="Soups" class="img-fluid d-block mx-auto rounded-circle rounded-circle"
+          src="https://www.themealdb.com/images/media/meals/1529446137.jpg">
+        <p>Soups</p>
+      </div>
+      <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+        <img id="pasta" alt="Pasta" class="img-fluid d-block mx-auto rounded-circle rounded-circle"
+          src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg">
+        <p>Pasta</p>
+      </div>
+      <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+        <img id="desert" alt="Desert" class="img-fluid d-block mx-auto rounded-circle rounded-circle"
+          src="https://www.themealdb.com/images/media/meals/qpqtuu1511386216.jpg">
+        <p>Desert</p>
+      </div>
+      <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+        <img id="breakfast" alt="Breakfast" class="img-fluid d-block mx-auto rounded-circle rounded-circle"
+          src="https://www.themealdb.com/images/media/meals/g373701551450225.jpg">
+        <p>Breakfast</p>
       </div>
     </div>
-    <div class="copyright-wrapper">
-      &copy; 2020 SCIT &#124; All rights reserved
-    </div>
   </div>
-  <div class="right-section">
-    <div id="address-wrapper">
-      <a href="./contact.html">
-        123 Any Street<br>
-        Scottsdale, AZ, 85251
-      </a>
-    </div>
-    <div id="contact-icon">
-      <i class="fas fa-map-marker-alt"></i>
-    </div>
+
+  <!-- Categories -->
+  <!-- <div>
+    <h3 class="text-left"> Browse by category </h3>
+</div> -->
+  <div class="content">
+    <div id="meals-container"></div>
   </div>
-</footer>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
 
-<script src="./app.js"></script>
-<script src="./api.js"></script>
-<script src="./search.js"></script>
-<script src="./carousel.js"></script>
+  <footer class="footer">
+    <div class="left-section">
+      <p>About</p>
+      <p>Recepies</p>
+      <p>Contact Us</p>
+    </div>
+    <div class="center-section">
+      <div id="logo-footer">
+        <img src="pictures/logo2_svg.png">
+      </div>
+      <div class="footer-phone">
+        <span id="phone-picture">
+          <i class="fas fa-phone-volume"></i>
+        </span>
+        <span id="phone">
+          555 555 5555
+        </span>
+      </div>
+      <div class="social-media-icons-wrapper">
+        <div id="text">Follow us :</div>
+        <div id="icons">
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+      <div class="copyright-wrapper">
+        &copy; 2020 SCIT &#124; All rights reserved
+      </div>
+    </div>
+    <div class="right-section">
+      <div id="address-wrapper">
+        <a href="./contact.html">
+          123 Any Street<br>
+          Scottsdale, AZ, 85251
+        </a>
+      </div>
+      <div id="contact-icon">
+        <i class="fas fa-map-marker-alt"></i>
+      </div>
+    </div>
+  </footer>
 
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <script src="./app.js"></script>
+  <script src="./api.js"></script>
+  <script src="./search.js"></script>
+  <script src="./carousel.js"></script>
+  <script src="./categories.js"></script>
 </body>
+
 </html>
