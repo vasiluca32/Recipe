@@ -24,72 +24,73 @@
 </header>
 
 <div id="flags" class="container-fluid scrollable-container">
-  <div class="row text-center p-3">
-  </div>
+  <div class="row text-center p-3"></div>
 </div>
-<!-- <div>
-    <h3 class="text-left"> Browse by first letter </h3>
-</div> -->
+
 <div id="letters" class="container-fluid scrollable-container">
-  <div class="row d-flex justify-content-center"></div>
+  <div class="row d-flex text-center justify-content-center"></div>
+</div>
+
+<div class="container-fluid scrollable-container" id="categories">
+  <div class="row d-flex text-center justify-content-center p-5">
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+      <img alt="Meat"
+           class="img-fluid d-block mx-auto rounded-circle"
+           src="https://www.themealdb.com/images/media/meals/xb97a81583266727.jpg">
+      <p>Meat</p>
+    </div>
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+      <img alt="Vegetarian"
+           class="img-fluid d-block mx-auto rounded-circle rounded-circle"
+           src="https://www.themealdb.com/images/media/meals/vptwyt1511450962.jpg">
+      <p>Vegetarian</p>
+    </div>
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+      <img alt="Vegan"
+           class="img-fluid d-block mx-auto rounded-circle rounded-circle"
+           src="https://www.themealdb.com/images/media/meals/rvxxuy1468312893.jpg">
+      <p>Vegan</p>
+    </div>
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+      <img alt="Salad"
+           class="img-fluid d-block mx-auto rounded-circle rounded-circle"
+           src="https://www.themealdb.com/images/media/meals/urtwux1486983078.jpg">
+      <p>Salad</p>
+    </div>
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+      <img alt="Soups"
+           class="img-fluid d-block mx-auto rounded-circle rounded-circle"
+           src="https://www.themealdb.com/images/media/meals/1529446137.jpg">
+      <p>Soups</p>
+    </div>
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+      <img alt="Pasta"
+           class="img-fluid d-block mx-auto rounded-circle rounded-circle"
+           src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg">
+      <p>Pasta</p>
+    </div>
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+      <img alt="Desert"
+           class="img-fluid d-block mx-auto rounded-circle rounded-circle"
+           src="https://www.themealdb.com/images/media/meals/qpqtuu1511386216.jpg">
+      <p>Desert</p>
+    </div>
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+      <img alt="Breakfast"
+           class="img-fluid d-block mx-auto rounded-circle rounded-circle"
+           src="https://www.themealdb.com/images/media/meals/g373701551450225.jpg">
+      <p>Breakfast</p>
+    </div>
+  </div>
 </div>
 
 <!-- Categories -->
 <!-- <div>
     <h3 class="text-left"> Browse by category </h3>
 </div> -->
-<div class="card-deck ">
-    <div class="card bg-transparent border-0">
-      <img src="https://www.themealdb.com/images/media/meals/xb97a81583266727.jpg" class="card-img-top rounded-circle" alt="Meat">
-      <div class="card-body ">
-        <h5 class="card-title text-center">Meat</h5>
-      </div>
-    </div>
-    <div class="card bg-transparent border-0">
-      <img src="https://www.themealdb.com/images/media/meals/vptwyt1511450962.jpg" class="card-img-top rounded-circle" alt="Vegetarian">
-      <div class="card-body ">
-        <h5 class="card-title text-center">Vegetarian</h5>
-      </div>
-    </div>
-    <div class="card bg-transparent border-0">
-      <img src="https://www.themealdb.com/images/media/meals/rvxxuy1468312893.jpg" class="card-img-top rounded-circle" alt="Vegan">
-      <div class="card-body">
-        <h5 class="card-title text-center">Vegan</h5>
-      </div>
-    </div>
-    <div class="card bg-transparent border-0">
-        <img src="https://www.themealdb.com/images/media/meals/urtwux1486983078.jpg" class="card-img-top rounded-circle" alt="Salad">
-        <div class="card-body">
-          <h5 class="card-title text-center">Salad</h5>
-        </div>
-  </div>
+<div class="content">
+  <div id="meals-container"></div>
 </div>
-  <div class="card-deck">
-    <div class="card bg-transparent border-0">
-      <img src="https://www.themealdb.com/images/media/meals/1529446137.jpg" class="card-img-top rounded-circle" alt="Soups">
-      <div class="card-body">
-        <h5 class="card-title text-center">Soups</h5>
-      </div>
-    </div>
-    <div class="card bg-transparent border-0">
-      <img src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg" class="card-img-top rounded-circle" alt="Pasta">
-      <div class="card-body">
-        <h5 class="card-title text-center">Pasta</h5>
-      </div>
-    </div>
-    <div class="card bg-transparent border-0">
-        <img src="https://www.themealdb.com/images/media/meals/qpqtuu1511386216.jpg" class="card-img-top rounded-circle" alt="Desert">
-        <div class="card-body">
-          <h5 class="card-title text-center">Desert</h5>
-        </div>
-      </div>
-      <div class="card bg-transparent border-0">
-        <img src="https://www.themealdb.com/images/media/meals/g373701551450225.jpg" class="card-img-top rounded-circle" alt="Breakfast">
-        <div class="card-body">
-          <h5 class="card-title text-center">Breakfast</h5>
-        </div>
-  </div>
-
 
 
 <footer class="footer">
