@@ -51,7 +51,7 @@ function getByFlag(event) {
 }
 
 function getByCategory(url) {
-  console.log(url);
+//   console.log(url);
   fetch(url)
     .then(function (response) {
       return response.json();
