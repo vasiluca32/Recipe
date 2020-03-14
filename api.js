@@ -50,6 +50,28 @@ function getByFlag(event) {
     });
 }
 
+function getByCategory(url) {
+//   console.log(url);
+  fetch(url)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (json) {
+      clearMealContainer();
+      for (let meal of json.meals) {
+        fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal.idMeal}`)
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (json) {
+            // console.log(json.meals)
+            renderMeals(json.meals, false);
+          })
+      }
+    });
+
+}
+
 const checkMealsData = (meals) => {
   if (meals === null || meals.size === 0) {
     let mealsContainer = document.querySelector("#meals-container");
