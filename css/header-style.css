@@ -1,12 +1,12 @@
-/* header{
+header{
     border-bottom: 1px solid lightgray;
-    height: 70px;
-    width:100%;
-    top: 0;
+}
+#title{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 40px;
 }
 
-
- #home-button {
+ #header_logo, #footer_logo {
     height: 60px;
     width:60px;
     margin-left: 5px;
@@ -14,28 +14,24 @@
     cursor: pointer;
     border-radius: 100%;
     float: left;
-    
 }
 
 
 #home-button:hover{
    opacity: 50%;
-/* } */
-.navbar-brand img
-{
-   height: 60px;
-   width:60px;
    cursor: pointer;
 }
+
 #search {
     border-radius: 5px;
     padding: 5px;
     margin-top: 20px;
     margin-left: 10px;
     height: 30px;
-} 
+}
+
 #btn {
     background-color: white;
 }
- 
+
 
