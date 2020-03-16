@@ -17,6 +17,8 @@
     <a class="navbar-brand">
       <img id="home-button" src="pictures/logo2_svg.png" onclick="location.href='index.html'">
     </a>
+    <p id="title"> Make it simple</p>
+
     <form class="form-inline my-2 my-lg-0">
       <input id="input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button id="btn" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
@@ -84,55 +86,72 @@
     <div id="meals-container"></div>
   </div>
 
+  <footer class="page-footer font-small  text-dark">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1 flex-column">
+          <div >
+          <a class="navbar-brand">
+            <img id="home-button" onclick="location.href='index.html'" src="pictures/logo2_svg.png">
+          </a>
+          </div>
+          <div>
+            <a class="text-dark" href="about.html">About Us</a>
+          </div>
+          <div>
+            <a class="text-dark"  href="contact.html">Contact</a>
+          </div>
 
-  <footer class="footer">
-    <div class="left-section">
-      <p>About</p>
-      <p>Recepies</p>
-      <p>Contact Us</p>
-    </div>
-    <div class="center-section">
-      <div id="logo-footer">
-        <img src="pictures/logo2_svg.png">
-      </div>
-      <div class="footer-phone">
-        <span id="phone-picture">
-          <i class="fas fa-phone-volume"></i>
-        </span>
-        <span id="phone">
-          555 555 5555
-        </span>
-      </div>
-      <div class="social-media-icons-wrapper">
-        <div id="text">Follow us :</div>
-        <div id="icons">
-          <a href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
+        </div>
+        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+          <!-- Contact details -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="fas fa-home mr-3"></i>Henri Barbusse, Cluj-Napoca 400000
+              </p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            </li>
+
+          </ul>
+
+        </div>
+        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+          <!-- Social buttons -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+          <!-- Facebook -->
+          <a class="btn-floating btn-fb" type="button">
             <i class="fab fa-facebook-f"></i>
           </a>
+          <!-- Twitter -->
+          <a class="btn-floating btn-tw" type="button">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!-- Google +-->
+          <a class="btn-floating btn-gplus" type="button">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+          <!-- Dribbble -->
+          <a class="btn-floating btn-dribbble" type="button">
+            <i class="fab fa-dribbble"></i>
+          </a>
+
         </div>
-      </div>
-      <div class="copyright-wrapper">
-        &copy; 2020 SCIT &#124; All rights reserved
+
       </div>
     </div>
-    <div class="right-section">
-      <div id="address-wrapper">
-        <a href="./contact.html">
-          123 Any Street<br>
-          Scottsdale, AZ, 85251
-        </a>
-      </div>
-      <div id="contact-icon">
-        <i class="fas fa-map-marker-alt"></i>
-      </div>
-    </div>
-  </footer>
+    </footer>
+
+
+
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
