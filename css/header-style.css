@@ -1,13 +1,13 @@
 header{
     border-bottom: 1px solid lightgray;
-    
+
 }
 #title{
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 40px;
 }
 
- #home-button {
+ #header_logo, #footer_logo {
     height: 60px;
     width:60px;
     margin-left: 5px;
@@ -15,7 +15,7 @@ header{
     cursor: pointer;
     border-radius: 100%;
     float: left;
-    
+
 }
 
 
@@ -30,6 +30,6 @@ header{
     margin-top: 20px;
     margin-left: 10px;
     height: 30px;
-} 
- 
+}
+
 
