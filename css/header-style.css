@@ -1,6 +1,5 @@
 header{
     border-bottom: 1px solid lightgray;
-
 }
 #title{
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
@@ -15,7 +14,6 @@ header{
     cursor: pointer;
     border-radius: 100%;
     float: left;
-
 }
 
 
@@ -30,6 +28,10 @@ header{
     margin-top: 20px;
     margin-left: 10px;
     height: 30px;
+}
+
+#btn {
+    background-color: white;
 }
 
 
