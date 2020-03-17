@@ -3,12 +3,12 @@
 <head>
   <title>Make it Simple</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <link href="css/header-style.css" rel="stylesheet" type="text/css" />
-  <link href="css/content.css" rel="stylesheet" type="text/css" />
-  <link href="css/footer.css" rel="stylesheet" type="text/css" />
-  <link href="css/carousel.css" rel="stylesheet" type="text/css" />
+        crossorigin="anonymous" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh">
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <link href="css/header-style.css" rel="stylesheet" type="text/css"/>
+  <link href="css/content.css" rel="stylesheet" type="text/css"/>
+  <link href="css/footer.css" rel="stylesheet" type="text/css"/>
+  <link href="css/flags.css" rel="stylesheet" type="text/css"/>
   <script src="https://kit.fontawesome.com/5c0ea470d5.js"></script>
   <link href='./pictures/logo2_svg.png' rel='icon'>
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
@@ -18,168 +18,157 @@
 </head>
 
 <body class="container-fluid p-0">
-  <header class="navbar" role="banner">
-    <a class="navbar-brand">
-      <img id="header_logo" onclick="location.href='index.html'" src="pictures/logo2_svg.png">
-    </a>
-    <form class="form-inline my-2 my-lg-0">
-      <input aria-label="Search" class="form-control mr-sm-2" id="input" placeholder="Your Favorite Foods?" type="search">
-      <button id="btn" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
-    </form>
-  </header>
-
-  <div id="flags" class="container-fluid scrollable-container">
-    <div class="row text-center p-3"></div>
+<header class="navbar" role="banner">
+  <a class="navbar-brand">
+    <img id="header_logo" onclick="location.href='index.html'" src="pictures/logo2_svg.png">
+  </a>
+  <div class="flex-column mr-auto">
+    <h3 class="navbar-nav" id="navTitle">Make it Simple</h3>
   </div>
+  <form class="form-inline my-2 my-lg-0">
+    <input aria-label="Search" class="form-control mr-sm-2" id="input" placeholder="Your Favorite Foods?" type="search">
+    <button class="btn btn-outline-info my-2 my-sm-0" id="btn" type="button">Search</button>
+  </form>
+</header>
 
-  <div id="letters" class="container-fluid scrollable-container">
-    <div class="row d-flex text-center justify-content-center"></div>
+<div class="container-fluid scrollable-container" id="flags">
+  <div class="row text-center p-3"></div>
+</div>
+
+<div class="container-fluid scrollable-container" id="letters">
+  <div class="row d-flex text-center justify-content-center"></div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 offset-md-3 p-0" id="description">
+    <h1>Welcome to</br> </h1>
+    <h1 id="contentTitle">Make it Simple</h1>
+    <h3 id='thankyou'>Thank you for stopping by! We love to share wholesome and delicious recipes, perfect for home
+      cooked family meals.</h3>
   </div>
+</div>
 
-  <div class="row">
-    <div class="col-md-6 offset-md-3" id="description">
-      <h1 >Welcome to</br> </h1>
-      <h1 id='webname'>Make it Simple</h1>
-      <h1>Recipes </h1>
-      <h3 id='thankyou'>Thank you for stopping by! We love to share wholesome and delicious recipes, perfect for home cooked family meals.</h3>
+<div class="container-fluid scrollable-container" id="categories">
+  <div class="row d-flex text-center justify-content-center p-5">
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+      <img alt="Meat" class="img-fluid d-block mx-auto rounded-circle" id="meat"
+           src="https://www.themealdb.com/images/media/meals/xb97a81583266727.jpg">
+      <p>Meat</p>
     </div>
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+      <img alt="Vegetarian" class="img-fluid d-block mx-auto rounded-circle rounded-circle" id="vegetarian"
+           src="https://www.themealdb.com/images/media/meals/vptwyt1511450962.jpg">
+      <p>Vegetarian</p>
     </div>
-
-  <div class="container-fluid scrollable-container" id="categories">
-    <div class="row d-flex text-center justify-content-center p-5">
-      <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
-        <img id="meat" alt="Meat" class="img-fluid d-block mx-auto rounded-circle"
-          src="https://www.themealdb.com/images/media/meals/xb97a81583266727.jpg">
-        <p>Meat</p>
-      </div>
-      <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
-        <img id="vegetarian" alt="Vegetarian" class="img-fluid d-block mx-auto rounded-circle rounded-circle"
-          src="https://www.themealdb.com/images/media/meals/vptwyt1511450962.jpg">
-        <p>Vegetarian</p>
-      </div>
-      <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
-        <img id="vegan" alt="Vegan" class="img-fluid d-block mx-auto rounded-circle rounded-circle"
-          src="https://www.themealdb.com/images/media/meals/rvxxuy1468312893.jpg">
-        <p>Vegan</p>
-      </div>
-      <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
-        <img id="salad" alt="Salad" class="img-fluid d-block mx-auto rounded-circle rounded-circle"
-          src="https://www.themealdb.com/images/media/meals/urtwux1486983078.jpg">
-        <p>Salad</p>
-      </div>
-      <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
-        <img id="soups" alt="Soups" class="img-fluid d-block mx-auto rounded-circle rounded-circle"
-          src="https://www.themealdb.com/images/media/meals/1529446137.jpg">
-        <p>Soups</p>
-      </div>
-      <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
-        <img id="pasta" alt="Pasta" class="img-fluid d-block mx-auto rounded-circle rounded-circle"
-          src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg">
-        <p>Pasta</p>
-      </div>
-      <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
-        <img id="desert" alt="Desert" class="img-fluid d-block mx-auto rounded-circle rounded-circle"
-          src="https://www.themealdb.com/images/media/meals/qpqtuu1511386216.jpg">
-        <p>Desert</p>
-      </div>
-      <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
-        <img id="breakfast" alt="Breakfast" class="img-fluid d-block mx-auto rounded-circle rounded-circle"
-          src="https://www.themealdb.com/images/media/meals/g373701551450225.jpg">
-        <p>Breakfast</p>
-      </div>
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+      <img alt="Vegan" class="img-fluid d-block mx-auto rounded-circle rounded-circle" id="vegan"
+           src="https://www.themealdb.com/images/media/meals/rvxxuy1468312893.jpg">
+      <p>Vegan</p>
+    </div>
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+      <img alt="Salad" class="img-fluid d-block mx-auto rounded-circle rounded-circle" id="salad"
+           src="https://www.themealdb.com/images/media/meals/urtwux1486983078.jpg">
+      <p>Salad</p>
+    </div>
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+      <img alt="Soups" class="img-fluid d-block mx-auto rounded-circle rounded-circle" id="soups"
+           src="https://www.themealdb.com/images/media/meals/1529446137.jpg">
+      <p>Soups</p>
+    </div>
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+      <img alt="Pasta" class="img-fluid d-block mx-auto rounded-circle rounded-circle" id="pasta"
+           src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg">
+      <p>Pasta</p>
+    </div>
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+      <img alt="Desert" class="img-fluid d-block mx-auto rounded-circle rounded-circle" id="desert"
+           src="https://www.themealdb.com/images/media/meals/qpqtuu1511386216.jpg">
+      <p>Desert</p>
+    </div>
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-6 zoom">
+      <img alt="Breakfast" class="img-fluid d-block mx-auto rounded-circle rounded-circle" id="breakfast"
+           src="https://www.themealdb.com/images/media/meals/g373701551450225.jpg">
+      <p>Breakfast</p>
     </div>
   </div>
+</div>
 
-  <!-- Categories -->
-  <!-- <div>
-    <h3 class="text-left"> Browse by category </h3>
-</div> -->
-  <div class="content">
-    <div id="meals-container"></div>
-  </div>
+<div class="content">
+  <div id="meals-container"></div>
+</div>
 
-  <footer class="page-footer font-small  text-dark">
-    <div class="container text-center text-md-left">
-      <div class="row">
-        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1 flex-column">
-          <div >
-          <a class="navbar-brand">
+<footer class="page-footer font-small  text-dark">
+  <div class="container text-center text-md-left">
+    <div class="row">
+      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1 flex-column">
+        <div>
+          <a class="navbar-brand zoom">
             <img id="footer_logo" onclick="location.href='index.html'" src="pictures/logo2_svg.png">
           </a>
-          </div>
-          <div>
-            <a class="text-dark" href="about.html">About Us</a>
-          </div>
-          <div>
-            <a class="text-dark"  href="contact.html">Contact</a>
-          </div>
-
         </div>
-        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-
-          <!-- Contact details -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <p>
-                <i class="fas fa-home mr-3"></i>Henri Barbusse, Cluj-Napoca 400000
-              </p>
-            </li>
-            <li>
-              <p>
-                <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-            </li>
-
-          </ul>
-
+        <div>
+          <a class="text-dark zoom" href="about.html">About Us</a>
         </div>
-        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
-
-          <!-- Social buttons -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
-
-          <!-- Facebook -->
-          <a class="btn-floating btn-fb" type="button">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <!-- Twitter -->
-          <a class="btn-floating btn-tw" type="button">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <!-- Google +-->
-          <a class="btn-floating btn-gplus" type="button">
-            <i class="fab fa-google-plus-g"></i>
-          </a>
-          <!-- Dribbble -->
-          <a class="btn-floating btn-dribbble" type="button">
-            <i class="fab fa-dribbble"></i>
-          </a>
-
+        <div>
+          <a class="text-dark zoom" href="contact.html">Contact</a>
         </div>
 
       </div>
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i>Henri Barbusse, Cluj-Napoca 400000
+            </p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          </li>
+
+        </ul>
+
+      </div>
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+        <h5 class="font-weight-bold text-uppercase mb-4 ">Follow Us</h5>
+        <div>
+          <a class="icon-center">
+            <i class="fab fa-facebook-f mr-md-3 mr-3 zoom"  onclick="window.location.href = 'http://www.facebook.com'"></i>
+          </a>
+          <a class="icon-center">
+            <i class="fab fa-twitter  mr-md-3 mr-3 zoom" onclick="window.location.href = 'http://www.twitter.com'"></i>
+          </a>
+          <a class="icon-center">
+            <i class="fab fa-instagram  mr-md-3 mr-3 zoom" onclick="window.location.href = 'http://www.instagram.com'"></i>
+          </a>
+        </div>
+
+      </div>
+
     </div>
-    </footer>
+  </div>
+</footer>
 
 
+<script crossorigin="anonymous"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-
-  <script src="./app.js"></script>
-  <script src="./api.js"></script>
-  <script src="./search.js"></script>
-  <script src="./carousel.js"></script>
-  <script src="./categories.js"></script>
+<script src="./app.js"></script>
+<script src="./api.js"></script>
+<script src="./search.js"></script>
+<script src="flags-line.js"></script>
+<script src="./categories.js"></script>
 </body>
 
 </html>
