@@ -35,18 +35,20 @@ function getByFlag(event) {
     .then(function (response) {
       return response.json();
     })
-    .then(function (body) {
+    .then(async function (body) {
       clearMealContainer();
+      let mealsToRender = [];
       if (checkMealsData(body.meals))
         for (let meal of body.meals) {
-          fetch(`${url}lookup.php?i=${meal.idMeal}`)
+          await fetch(`${url}lookup.php?i=${meal.idMeal}`)
             .then(function (response) {
               return response.json();
             })
             .then(function (body) {
-              renderMeals(body.meals, false);
+              mealsToRender.push(body.meals[0]);
             })
         }
+      renderMeals(mealsToRender, false);
     });
 }
 
@@ -56,18 +58,19 @@ function getByCategory(url) {
     .then(function (response) {
       return response.json();
     })
-    .then(function (json) {
+    .then(async function (json) {
       clearMealContainer();
+      let mealsToRender = [];
       for (let meal of json.meals) {
-        fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal.idMeal}`)
+        await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal.idMeal}`)
           .then(function (response) {
             return response.json();
           })
           .then(function (json) {
-            // console.log(json.meals)
-            renderMeals(json.meals, false);
+            mealsToRender.push(json.meals[0]);
           })
       }
+      renderMeals(mealsToRender, false);
     });
 
 }
